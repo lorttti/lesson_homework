@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои любимые цитаты</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #cbe3f5; /* Светло-фиолетовый фон как на изображении */
+            color: #333;
+            text-align: center;
+        }
+
+         .navigation {
+             display: flex; /* Включаем flexbox */
+             justify-content: space-between; /* Раскладываем кнопки по краям */
+             margin: 20px 0;
+             padding: 10px;
+             width: 100%; /* Контейнер занимает всю ширину экрана */
+         }
+        .nav-button {
+            padding: 16px 30px;
+            border-radius: 30px; /* Скругление углов как на кнопке */
+            background-color: #6c5ce7; /* Фиолетовый цвет кнопки как на изображении */
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .nav-button:hover {
+            background-color: #5a48a3; /* Тёмнее при наведении */
+        }
+
+        .title {
+            margin: 30px 0;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            text-align: center; /* Заголовок по центру */
+        }
+
+        .quotes-list {
+            width: 80%;
+            margin: 30px auto;
+            line-height: 1.6;
+            text-align: left;
+            list-style-type: disc; /* Маркеры в виде точек */
+            padding-left: 20px;
+        }
+
+        .quote-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Кнопка «Предыдущая страница» (как на изображении — слева) -->
+    <div class="navigation">
+        <a href="memes.html" class="nav-button"><<<<< Предыдущая страница</a>
+    </div>
+
+    <!-- Заголовок -->
+    <h1 class="title">Мои любимые цитаты</h1>
+
+    <!-- Список цитат -->
+    <ul class="quotes-list">
+        <li class="quote-item">«Я бы мог объяснить, но ты всё равно сделаешь по-своему»</li>
+        <li class="quote-item">«Да, я молчу. Нет, это не значит, что мне всё равно»</li>
+        <li class="quote-item">«Я не сложный. Просто требования выше среднего»</li>
+        <li class="quote-item">«Спокойствие — это когда ты всё понял, но решил не участвовать»</li>
+        <li class="quote-item">«Я не ленюсь. Я экономлю энергию на важное»</li>
+    </ul>
+</body>
+</html>

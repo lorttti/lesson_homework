@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_personal_page</title>
+    <style>
+        @import url('fonts/main_font.css');
+
+        * {
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        body {
+            background-color: #e6f0ff;
+            position: relative;
+        }
+
+        .container {
+            width: 800px;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .header-container {
+            position: absolute;
+            left: 50px;
+            top: 0;
+        }
+
+        .header-block {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0 0 10px 0;
+            color: #333;
+            font-weight: bold;
+            text-align: left;
+            position: relative; /* Включаем относительное позиционирование */
+            left: -400px; /* Сдвигаем на 20px влево */
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0 0 15px 0;
+            color: #555;
+            font-weight: bold;
+            position: relative;
+            left: -400px;
+
+        }
+
+        .content-block {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 30px;
+        }
+
+
+         .image-block {
+    width: 200%;
+    text-align: center;
+    position: relative;
+    left: -250px;
+    top: -20%;
+    margin-top: 180px; /* Сдвигает блок вниз на 30 пикселей */
+}
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+            transform: scale(1.5);
+        }
+
+        .text-block {
+            width: 45%;
+            text-align: left;
+            position: relative;
+            left: 50px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-top: 30px;
+            color: #666;
+            position: relative;
+            left: -200px;
+            top: 75px; /* Опускает текст на 20px */
+            width: 45ch
+
+
+            
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            left: -200px;
+            top: 105px; 
+
+        }
+
+        li {
+            font-size: 24px;
+            margin: 5px 0;
+            color: #666;
+            position: relative;
+            left: -840px;
+            top: 400px;
+
+        }
+
+        .nav-button {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 16px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: -30px;
+            right: 50px;
+            width: 100%;
+            max-width: 600px;
+            white-space: nowrap;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .nav-button:hover {
+            background-color: #5a48a3;
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <a href="facts.html" class="nav-button">Следующая страница>>>></a>
+    <div class="container">
+        <div class="header-container">
+            <div class="header-block">
+                <h1>Крута личная страница</h1>
+                <h2>Гуся Василия</h2>
+            </div>
+        </div>
+        <div class="content-block">
+            <div class="image-block">
+                <img src="images/goose.jpeg" alt="Гусь Василий">
+            </div>
+            <div class="text-block">
+                <p>Привет. Это мой проект по изучению фронта, и в нём я хочу рассказать о себе крутые факты и потренировать мой код стайл.</p>
+                <ul>
+                    <li>На страничках ты найдешь</li>
+                    <li>-Крутые факты обо мне</li>
+                    <li>-Мои любимые мемы</li>
+                    <li>-Мои любимые цитаты</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

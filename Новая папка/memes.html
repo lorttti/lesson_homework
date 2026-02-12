@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои любимые мемы</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #cbe3f5; /* Светло-фиолетовый фон */
+            color: #333;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 5%;
+            padding: 10px;
+        }
+
+        .nav-button {
+            padding: 16px 30px;
+            border-radius: 30px;
+            background-color: #6c5ce7; /* Фиолетовый цвет кнопок */
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #5a48a3; /* Тёмнее при наведении */
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .title {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .memes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+            gap: 20px; /* Отступы между элементами */
+            padding: 0 5%;
+        }
+
+        .meme-image {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Кнопки навигации -->
+    <div class="navigation">
+        <a href="facts.html" class="nav-button left"><<<<< Предыдущая страница</a>
+        <a href="quotes.html" class="nav-button right">Следующая страница >>>>></a>
+    </div>
+
+    <!-- Заголовок -->
+    <h1 class="title">Мои любимые мемы</h1>
+
+    <!-- Контейнер для мемов -->
+    <div class="memes-grid">
+        <img src="images/meme1.jpeg" alt="Гусь в очках с коктейлем" class="meme-image">
+        <img src="images/meme2.jpeg" alt="Удивлённый кот" class="meme-image">
+        <img src="images/meme3.jpeg" alt="Собака в самолёте: 'Я больше не могу'" class="meme-image">
+        <img src="images/meme4.jpeg" alt="Ёжик: 'Гуманитарный визг'" class="meme-image">
+    </div>
+</body>
+</html>
